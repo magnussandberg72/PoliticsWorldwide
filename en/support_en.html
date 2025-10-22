@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💖 Support – Magnus T Gustav Sandberg</title>
+  <meta name="description" content="Support the work of Magnus T Gustav Sandberg – every contribution helps to maintain and develop the websites and humanitarian apps.">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #0b1220;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 { font-size: 2rem; margin-top: 24px; color: #fff; }
+    p { font-size: 1.1rem; line-height: 1.6; margin: 10px 20px; }
+
+    .section {
+      background: #141d30;
+      border-radius: 14px;
+      margin: 20px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 480px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    }
+
+    .btn, button.btn {
+      display: block;
+      background-color: #2b334d;
+      color: #fff;
+      font-weight: 600;
+      padding: 16px 24px;
+      border: none;
+      border-radius: 10px;
+      margin: 14px auto;
+      width: 85%;
+      max-width: 360px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .btn:hover, button.btn:hover { background-color: #3a4769; }
+
+    /* 🔹 Navigation buttons */
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 40px 0 20px 0;
+    }
+    .nav-row a {
+      background-color: #2b334d;
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 26px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1rem;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+      transition: background-color 0.2s;
+    }
+    .nav-row a:hover { background-color: #3a4769; }
+
+    footer {
+      background-color: #0e1628;
+      color: #ccc;
+      font-size: 0.9rem;
+      padding: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 Support the Mission 🙏</h1>
+  <p>Your support keeps these websites and apps alive — every contribution helps maintain the work and build future siteprojects and apps.</p>
+
+  <div class="section">
+    <h2>🏦 Bank Transfer</h2>
+    <p>Your gift supports ongoing development and technical maintenance of all projects.</p>
+    <button class="btn" onclick="copyBank()">📋 Copy Bank Info</button>
+  </div>
+
+  <div class="section">
+    <h2>📱 Swish</h2>
+    <p>If you are in Sweden, you can give easily through Swish 💚</p>
+    <a href="swish://" class="btn">💚 Open Swish</a>
+    <button class="btn" onclick="copySwish()">📋 Copy Swish Number</button>
+  </div>
+
+  <div class="nav-row">
+    <a href="./index_en.html">🏠 Home</a>
+    <a href="./manifest_en.html">📜 Manifest</a>
+    <a href="./media_en.html">📰 Media</a>
+    <a href="./advices_en.html">💡 Proposals</a>
+    <a href="./contact.html">📬 Contact(coming)</a>
+  </div>
+
+  <footer>
+    © 2025 Magnus T Gustav Sandberg — Kalix, Sweden
+  </footer>
+
+  <script>
+    function copyBank() {
+      const bankInfo = "Handelsbanken\nIBAN: SE43 6000 0000 0009 4329 1011\nBIC: HANDSESS\nClearing: 6201\nAccount: 943 291 011";
+      navigator.clipboard.writeText(bankInfo);
+      alert("🏦 Bank information copied!");
+    }
+    function copySwish() {
+      navigator.clipboard.writeText("0728502584");
+      alert("📱 Swish number copied!");
+    }
+  </script>
+
+</body>
+</html>
