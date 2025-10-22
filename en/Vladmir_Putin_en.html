@@ -14,7 +14,6 @@
     text-align: center;
   }
 
-  /* 🔹 Header separat, ej över bilden */
   header {
     position: relative;
     background: #1a1a1a;
@@ -26,10 +25,9 @@
     z-index: 10;
   }
 
-  /* 🔹 Hero image: syns helt, ingen text ovanpå */
+  /* 🔹 Hero section */
   .hero {
     width: 100%;
-    overflow: hidden;
     background: #0b1220;
   }
 
@@ -37,7 +35,6 @@
     width: 100%;
     height: auto;
     display: block;
-    object-fit: contain;
     border-bottom: 2px solid rgba(255,255,255,0.1);
   }
 
@@ -73,6 +70,32 @@
     color: #eaf1ff;
   }
 
+  /* 🔹 Buttons restored */
+  .bottom-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 50px 0 20px 0;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #2b334d;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 26px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    transition: background 0.2s;
+  }
+
+  .btn:hover {
+    background: #3a4769;
+  }
+
   footer {
     color: #bbb;
     font-size: 0.9rem;
@@ -82,19 +105,18 @@
     border-top: 1px solid rgba(255,255,255,0.1);
     text-align: center;
   }
-</style>
+  </style>
 </head>
 <body>
 
   <header>✝️ Open Letter to President Vladmir Putin, and other leaders. ✝️</header>
 
   <section class="hero">
-    <h1>Inspired by the Spirit of the Abraham Accords</h1>
+    <img src="./public/Jesus_unites_left_and_right.png" alt="Jesus unites left and right">
   </section>
 
   <main>
     <h2>✉️ Open Letter for Peace and Reconciliation</h2>
-
     <p>
       This letter is born from prayer — from believers across nations who share one hope:
       that swords may be turned into plowshares, and hearts may remember mercy.
@@ -108,7 +130,7 @@
     <h2>🌿 A Call to Conscience</h2>
     <p>
       The world is weary of division — East against West, nation against nation, ideology against ideology.
-      Yet the Creator made us of one blood and one breath.  
+      Yet the Creator made us of one blood and one breath.
       When we forget this, politics becomes idolatry; when we remember, nations can heal.
     </p>
     <p>
@@ -158,9 +180,11 @@
 
     <h2>🙏 A Prayer for the Nations</h2>
     <p>
-      We pray for Russia and Ukraine, that we begin to Love our next, and Love eachothers, we pray for Israel and Palestine, for America, Europe, Africa, and Asia —
+      We pray for Russia and Ukraine, that we begin to love our next, and love each other.
+      We pray for Israel and Palestine, for America, Europe, Africa, and Asia —
       that the leaders of these lands may hear the whisper of conscience and the cry of the children, the women, the poor 🙏🏼
-      We pray for President Vladimir Putin, President Volodymyr Zelenskyy, Prime Minister Benjamin Netanyahu, President Donald Trumph, and every statesman burdened with choice:
+      We pray for President Vladimir Putin, President Volodymyr Zelenskyy, Prime Minister Benjamin Netanyahu, President Donald Trump,
+      and every statesman burdened with choice:
       May you be guided not by fear, but by wisdom; not by vengeance, but by vision.
     </p>
 
@@ -190,7 +214,7 @@
       <br>Kalix, Sweden · 2025
     </p>
     <br><br>
-    <h2>End the wars, Enough brethrens blood shed, withdraw the forces 🙏🏼</h2>
+    <h2>End the wars, Enough brethren’s blood shed, withdraw the forces 🙏🏼</h2>
     <br>
     <p>#Russia #Usa #Sweden #Israel #AbrahamAccords #Peace #Jesus #Bible</p>
   </main>
