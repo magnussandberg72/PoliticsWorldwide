@@ -14,21 +14,21 @@
     text-align: center;
   }
 
+  /* 🔹 Header separat, ej över bilden */
   header {
+    position: relative;
     background: #1a1a1a;
     color: #e0e0e0;
     padding: 16px 0;
     font-size: 1.3rem;
     font-weight: 700;
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    z-index: 10;
   }
 
-  /* 🔹 Hero image – full visibility */
+  /* 🔹 Hero image: syns helt, ingen text ovanpå */
   .hero {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     background: #0b1220;
   }
@@ -36,9 +36,8 @@
   .hero img {
     width: 100%;
     height: auto;
-    max-height: none;
-    object-fit: contain; /* 👈 visar hela bilden utan beskärning */
     display: block;
+    object-fit: contain;
     border-bottom: 2px solid rgba(255,255,255,0.1);
   }
 
@@ -63,27 +62,6 @@
     margin-bottom: 18px;
   }
 
-  ul.proposals {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 10px 0;
-  }
-
-  ul.proposals li {
-    background: #141d30;
-    margin-bottom: 18px;
-    padding: 18px 20px;
-    border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
-    color: #eaf1ff;
-    line-height: 1.6;
-  }
-
-  ul.proposals li strong {
-    color: #FFD166;
-    font-weight: 700;
-  }
-
   blockquote {
     background: #141d30;
     border-left: 4px solid #FFD166;
@@ -95,51 +73,6 @@
     color: #eaf1ff;
   }
 
-  .videos {
-    margin-top: 40px;
-    background: #141d30;
-    padding: 20px;
-    border-radius: 14px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-  }
-
-  .video-item h4 {
-    color: #FFD166;
-    margin-bottom: 6px;
-  }
-
-  .video-item iframe {
-    width: 100%;
-    height: 315px;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
-  }
-
-  .bottom-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    margin: 50px 0 20px 0;
-  }
-
-  .btn {
-    display: inline-block;
-    background: #2b334d;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 12px 26px;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
-    transition: background 0.2s;
-  }
-
-  .btn:hover {
-    background: #3a4769;
-  }
-
   footer {
     color: #bbb;
     font-size: 0.9rem;
@@ -149,7 +82,7 @@
     border-top: 1px solid rgba(255,255,255,0.1);
     text-align: center;
   }
-  </style>
+</style>
 </head>
 <body>
 
@@ -225,7 +158,7 @@
 
     <h2>🙏 A Prayer for the Nations</h2>
     <p>
-      We pray for Russia and Ukraine, that we begin Love our next, and Love eachothers, we pray for Israel and Palestine, for America, Europe, Africa, and Asia —
+      We pray for Russia and Ukraine, that we begin to Love our next, and Love eachothers, we pray for Israel and Palestine, for America, Europe, Africa, and Asia —
       that the leaders of these lands may hear the whisper of conscience and the cry of the children, the women, the poor 🙏🏼
       We pray for President Vladimir Putin, President Volodymyr Zelenskyy, Prime Minister Benjamin Netanyahu, President Donald Trumph, and every statesman burdened with choice:
       May you be guided not by fear, but by wisdom; not by vengeance, but by vision.
